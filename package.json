@@ -12,7 +12,7 @@
     "depency": "npm install",
     "build": "build.sh",
     "start": "node main.js",
-    "test": "cd BigNet/test && test"
+    "test": "cd PublicNetwork/test && test"
   },
   "dependencies": {
     "big-number": "^1.0.0",
