@@ -11,7 +11,7 @@ bitcoen
 node_modules1
 PixelBattle
 plugins/cryptoPRO
-plugins/iz3-bitcore-crypto
+plugins/ll-bitcore-crypto
 runtime
 startTest
 testApp

@@ -1,25 +1,21 @@
 {
-  "name": "iz3-db-demo",
+  "name": "ll-db-demo",
   "version": "1.0.0",
-  "description": "Demo iz3node db plugin",
+  "description": "Demo db plugin",
   "main": "index.js",
   "dependencies": {
     
   },
-  "homepage": "https://izzz.io",
+  "homepage": "",
   "author": "Andrey Nedobylskiy & Kirill Revenkov",
   "license": "GPL",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Izzzio/izzzio.git"
+    "url": "https://github.com/LeatherLedger/LeatherLedger.git"
   },
   "keywords": [
     "blockchain",
     "crypto",
-    "izzzio",
-    "izzz",
-    "iz3",
-    "bignet",
     "plugin", 
     "db"
   ]

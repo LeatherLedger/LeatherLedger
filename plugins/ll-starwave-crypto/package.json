@@ -1,0 +1,20 @@
+{
+  "name": "ll-starwave-crypto",
+  "version": "1.0.0",
+  "description": "Crypto StarWave protocol extension",
+  "main": "index.js",
+  "homepage": "",
+  "dependencies": {
+    "crypto-js": "^3.1.6"
+  },
+  "author": "Andrey Nedobylskiy",
+  "license": "GPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeatherLedger/LeatherLedger.git"
+  },
+  "keywords": [
+    "blockchain",
+    "crypto"
+  ]
+}

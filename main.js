@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 
 /**
- iZ³ | Izzzio blockchain - https://izzz.io
+ Leather Ledger Project
  @author: Andrey Nedobylsky (admin@twister-vl.ru)
-
- Copyright 2018 Izio LLC (OOO "Изио")
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -27,7 +25,7 @@ let program = require('commander');
 
 program
     .version(version)
-    .description(' iZ3 - IZZZIO blockchain core.')
+    .description(' LeatherLedger - Modular blockchain framework')
     .option('-a, --autofix', 'Fix saved chain if possible. WARNING: You can lose important data')
     .option('--clear', 'Clear all saved chain and deletes wallet. WARNING: You can lose important data')
     .option('--clear-db', 'Clear all saved chain and calculated wallets.')
@@ -64,7 +62,7 @@ const config = {
     maxPeers: 80,                       //Рекомендуемое число 15-20
     upnp: {                              //Автоматическое обнаружение узлов сети
         enabled: true,                  //Включить автоматическое обнаружение нод в сети
-        token: 'iz3node'                //Токен по которому нода будет искать другие ноды (должен быть уникальным для каждой цепочки)
+        token: 'llnode'                //Токен по которому нода будет искать другие ноды (должен быть уникальным для каждой цепочки)
     },
     networkPassword: '',                //"пароль" доступа к сети
 
@@ -143,7 +141,7 @@ const config = {
     //Enabled plugins
     dbPlugins: [],                      //Database plugins list
     plugins: [                          //Crypto and other plugins
-        "iz3-basic-crypto"
+        "ll-basic-crypto"
     ],
 
 

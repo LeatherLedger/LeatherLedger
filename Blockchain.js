@@ -1,5 +1,5 @@
 /**
- iZ³ | Izzzio blockchain - https://izzz.io
+ Leather Ledger Project
  @author: Andrey Nedobylsky (admin@twister-vl.ru)
  */
 
@@ -491,7 +491,7 @@ function Blockchain(config) {
                     txt: {
                         GT: String(getGenesisBlock().timestamp),
                         RA: config.recieverAddress,
-                        type: 'Generic iZ3 Node'
+                        type: 'Generic LL Node'
                     }
                 });
                 upnpAdvertisment.start();
@@ -712,7 +712,7 @@ function Blockchain(config) {
 
                         if(message.id === 'VITAMIN_META' && message.reciver !== config.recieverAddress && typeof message.yourIp === 'undefined') {
                             message.yourIp = ws._socket.remoteAddress;
-                            message.modifer = 'iZ3 node ' + config.recieverAddress;
+                            message.modifer = 'LL node ' + config.recieverAddress;
                             message.TTL++;
                             //broadcast(message);
                         } else if(message.reciver === config.recieverAddress && message.id === 'VITAMIN_META' && typeof message.yourIp !== 'undefined') {

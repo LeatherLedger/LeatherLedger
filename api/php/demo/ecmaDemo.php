@@ -1,6 +1,6 @@
 <?php
 /**
- * iZ³ | Izzzio blockchain - https://izzz.io
+ * Leather Ledger Project
  * @author: Andrey Nedobylsky (admin@twister-vl.ru)
  */
 
@@ -41,20 +41,20 @@ $countractSource = <<<CONTRACT
     global.registerContract(TestContract);
 CONTRACT;
 
-$izNode = new EcmaSmartRPC('http://localhost:3015/');
+$llNode = new EcmaSmartRPC('http://localhost:3015/');
 
-$result = $izNode->ecmaDeployContract($countractSource)['result'];
+$result = $llNode->ecmaDeployContract($countractSource)['result'];
 $newAddress = $result['address'];
 
 
 echo "Deployed contract address: " . $newAddress . "\n\n";
 
-echo "Deployed contract info: " . print_r($izNode->ecmaGetContractProperty($newAddress, 'contract')['result'], true) . "\n\n";
+echo "Deployed contract info: " . print_r($llNode->ecmaGetContractProperty($newAddress, 'contract')['result'], true) . "\n\n";
 
 echo "Deploy contract method 'call'\n";
 
-$result = $izNode->ecmaDeployMethod($newAddress, 'call', [])['result'];
+$result = $llNode->ecmaDeployMethod($newAddress, 'call', [])['result'];
 
 echo "New deploy block: ".$result['index']."\n";
 
-echo "Call contract method without deploy plus(2,3): " . print_r($izNode->ecmaCallMethod($newAddress, 'plus', [2, 3])['result'], true) . "\n";
+echo "Call contract method without deploy plus(2,3): " . print_r($llNode->ecmaCallMethod($newAddress, 'plus', [2, 3])['result'], true) . "\n";

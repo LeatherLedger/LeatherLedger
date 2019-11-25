@@ -1,26 +1,22 @@
 {
-  "name": "iz3-basic-crypto",
+  "name": "ll-basic-crypto",
   "version": "1.0.0",
-  "description": "IZZZIO blockchain internal cryptography",
+  "description": "LeatherLedger blockchain internal cryptography",
   "main": "index.js",
   "dependencies": {
     "crypto-js": "^3.1.6",
     "node-rsa": "^0.4.2",
     "keypair": "^1.0.1"
   },
-  "homepage": "https://izzz.io",
+  "homepage": "",
   "author": "Andrey Nedobylskiy",
   "license": "GPL",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Izzzio/izzzio.git"
+    "url": "https://github.com/LeatherLedger/LeatherLedger.git"
   },
   "keywords": [
     "blockchain",
-    "crypto",
-    "izzzio",
-    "izzz",
-    "iz3",
-    "bignet"
+    "crypto"
   ]
 }

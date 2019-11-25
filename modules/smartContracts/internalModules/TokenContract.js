@@ -1,10 +1,10 @@
 /**
- iZ³ | Izzzio blockchain - https://izzz.io
+ Leather Ledger Project
  @author: Andrey Nedobylsky (admin@twister-vl.ru)
  */
 
 /**
- * IZ3 token standard
+ * LeatherLedger token standard
  * Basic token contract.
  */
 class TokenContract extends Contract {
@@ -36,8 +36,8 @@ class TokenContract extends Contract {
      */
     get contract() {
         return {
-            name: 'IZ3 Token',
-            ticker: 'IZ3TKN',
+            name: 'LeatherLedger Token',
+            ticker: 'LL',
             owner: false,
             emission: this._initialEmission,
             type: 'token',

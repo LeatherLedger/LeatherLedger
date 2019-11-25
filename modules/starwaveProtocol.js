@@ -1,6 +1,5 @@
 /**
- iZ³ | Izzzio blockchain - https://izzz.io
- @author:  iZ³ Team (info@izzz.io)
+ Leather Ledger Project
  */
 
 

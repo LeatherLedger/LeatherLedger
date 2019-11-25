@@ -1,5 +1,5 @@
 /**
- iZ³ | Izzzio blockchain - https://izzz.io
+ Leather Ledger Project
  @author: Andrey Nedobylsky (admin@twister-vl.ru)
  EDUCERT - blockchain certificates checker
  */
@@ -51,7 +51,7 @@ class App extends DApp {
             });
         }
 
-        console.log('iZ³ Speed Benchmark loaded');
+        console.log('LL Speed Benchmark loaded');
         console.log();
         console.log('Benchmark configuration: ');
         console.log('TX per block: ' + TRANSACTIONS_PER_BLOCK);

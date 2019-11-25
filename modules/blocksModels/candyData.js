@@ -1,6 +1,5 @@
 /**
- iZ³ | Izzzio blockchain - https://izzz.io
- Candy - https://github.com/Izzzio/Candy
+ Leather Ledger Project
  @author: Andrey Nedobylsky (admin@twister-vl.ru)
  */
 
@@ -12,7 +11,6 @@ let type = 'CandyData';
 
 /**
  * Candy data block
- * Candy - part of Izzzio blockchain. https://github.com/Izzzio/Candy
  * @type {Signable}
  */
 class CandyData extends Signable {

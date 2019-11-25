@@ -1,5 +1,5 @@
 /**
- iZ³ | Izzzio blockchain - https://izzz.io
+ Leather Ledger Project
  */
 
 /**

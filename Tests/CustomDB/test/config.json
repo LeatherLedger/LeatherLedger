@@ -34,9 +34,9 @@
   },
   "signFunction": "NEWRSA",
   "dbPlugins": [
-    "iz3-db-demo"
+    "ll-db-demo"
   ],
   "plugins": [
-    "iz3-basic-crypto"
+    "ll-basic-crypto"
   ]
 }

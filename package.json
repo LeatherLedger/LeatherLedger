@@ -1,12 +1,12 @@
 {
-  "name": "iz3node",
+  "name": "leatherledger",
   "version": "1.1.5",
-  "description": "iZ³ - IZZZIO - fully customizable blockchain platform",
+  "description": "LeatherLedger - Modular blockchain framework",
   "main": "main.js",
-  "homepage": "https://izzz.io",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Izzzio/izzzio.git"
+    "url": "https://github.com/LeatherLedger/LeatherLedger.git"
   },
   "scripts": {
     "depency": "npm install",
@@ -41,24 +41,19 @@
     "node": ">=8.2.0"
   },
   "bugs": {
-    "url": "https://github.com/Izzzio/iz3node/issues",
-    "email": "info@izzz.io"
+    "url": "https://github.com/LeatherLedger/LeatherLedger/issues",
+    "email": "admin@twister-vl.ru"
   },
   "author": "Andrey Nedobyslky <admin@twister-vl.ru> (https://github.com/lailune)",
   "license": "Apache-2.0",
   "keywords": [
     "blockchain",
-    "izzz",
-    "izzzio",
     "p2p",
     "peer2peer",
     "dlt",
-    "node",
-    "bignet",
-    "iz3"
+    "node"
   ],
   "bin": {
-    "iz3node": "./main.js",
-    "izzzio": "./main.js"
+    "ledger": "./main.js"
   }
 }

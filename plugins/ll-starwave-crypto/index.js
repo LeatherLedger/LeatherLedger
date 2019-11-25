@@ -1,7 +1,5 @@
 /**
- iZ³ | Izzzio blockchain - https://izzz.io
-
- Copyright 2018 Izio LLC (OOO "Изио")
+ Leather Ledger Project
 
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
@@ -16,18 +14,12 @@
  limitations under the License.
  */
 
-const logger = new (require(global.PATH.mainDir + '/modules/logger'))("TestPlugin");
-const path = require('path');
-
-const PROTOCOL_PREFIX = 'level';
+const logger = new (require(global.PATH.mainDir + '/modules/logger'))("StarWaveCrypto");
 
 module.exports = function register(blockchain, config, storj) {
-    logger.info('Initialize custom DB');
+    logger.info('Initialize...');
 
-    let plugins = storj.get('plugins');
-    //console.log(JSON.stringify(plugins));
-    //console.log(plugins);
-    plugins.db.registerModule(PROTOCOL_PREFIX, __dirname + path.sep + 'customDB.js');
-    //console.log(plugins);
+    storj.put('StarWaveCrypto', require('./starwaveCrypto'));
+
     logger.info('OK');
 };

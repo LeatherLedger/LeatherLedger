@@ -1,6 +1,6 @@
 /**
  *
- * iZ³ | IZZZIO blockchain - https://izzz.io
+ * Leather Ledger Project
  *
  * WARNING: DO NOT USE IN PRODUCTION
  * ABSTRACT TEST CONTRACT. FIXTURE.
@@ -16,13 +16,13 @@ const EMISSION = 9999999999;
  * Token full name
  * @type {string}
  */
-const TOKEN_NAME = 'IZZZIO main token';
+const TOKEN_NAME = 'LeatherLedger main token';
 
 /**
  * Token ticker
  * @type {string}
  */
-const TICKER = 'iZ3';
+const TICKER = 'LL';
 
 /**
  * Address of main contract owner
@@ -78,7 +78,7 @@ const C2C_FEE = 0.001;
 const FEE_ADDRESS = CONTRACT_OWNER;
 
 /**
- * Main IZZZIO token contract
+ * Main token contract
  */
 class mainToken extends TokenContract {
 
