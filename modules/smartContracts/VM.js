@@ -125,7 +125,7 @@ class VM {
      * @param randomSeed
      * @return {*}
      */
-    setUpiZ3Context(randomSeed) {
+    setUpSmartContractsContext(randomSeed) {
         let that = this;
         let context = this.isolate.createContextSync();
         let jail = context.global;
@@ -303,7 +303,7 @@ class VM {
 
         this.script = script;
         this.state = state;
-        this.context = this.setUpiZ3Context(state.randomSeed);
+        this.context = this.setUpSmartContractsContext(state.randomSeed);
         this.compiledScript = this.isolate.compileScriptSync(script + contractInit);
 
         return this.compiledScript;
